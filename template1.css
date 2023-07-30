@@ -234,8 +234,10 @@ body {
 }
 
 .fotoframe3 {
+    width: 947px; height: 685px;
     background-image: url(assets/template1/fotodatetime.png);
     border-radius: 200px 200px 0px 0px;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -286,9 +288,12 @@ body {
     align-items: center;
     
 }
-table tr p {
-    font-size: 20px;
+table tr td p {
+    font-size: 24px;
 
+}
+table tr td img {
+    width: 11px; height: 13px
 }
 table tr .dua {
     width: 250px;
@@ -297,19 +302,17 @@ table tr .satu {
     width: 20px;
     color: #C9B699;
 }
-.piring .judul, .cincin .judul {
-    font-size: 48px;
-    font-weight: bold;
-    color: #5A4C37;
-   
+
+.piring .img img{
+    width: 79px; height: 61px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
-.piring .img, .cincin .img {
-    width: 100px;
-    height: 100px;
-    display: flex; align-items: center;
+.cincin .img img {
+    width: 69px; height: 81px;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 button {
@@ -396,3 +399,401 @@ button::before {
     height: 30px;
 }
 
+@media (max-width: 600px) {
+    .imgb {
+        flex: 8;
+        display: flex;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    .button {
+        display: flex;
+        justify-content: end;
+        flex: 8;
+    }
+    
+    .btn {
+        cursor: pointer;
+        background-color: white;
+        outline: 2px solid black;
+        border-radius: 3px;
+        font-size: 15px;
+        padding: 1px 10px;
+        font-weight: bold;
+    }
+    
+    .btn:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    nav {
+        background-color: #ffffff50;
+        position: absolute;
+        margin: 0px 50px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    header nav img {
+        height: 25px;
+    }
+    
+    .frame1 {
+        width: 100% ;
+        height: 350px;
+        background-image: url(assets/template1/FrameAwal.png) ;
+        background-size: cover;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        float: right;
+        font-size: 16px;
+        width: 260px;
+        height: 350px;
+        color: #F8F1E7;
+        text-align: center;
+    }
+    .text .a {
+        font-weight: bold;
+    }
+    .text .name {
+        font-family:'Gwendolyn', cursive ;
+        font-size: 50px;
+    }
+    .text .dates {
+     margin-top: -10px;
+    }
+    
+    .frame2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        background-color: white;
+    }
+    .isiframe2 {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .ucapan {
+        margin-bottom: 60px;
+    }
+    .ucapan .a{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .ucapan .b{
+        font-size: 46px;
+        color: #E5D1B3;
+    }
+    .ucapan .c, .d  {
+        font-size: 18px;
+        color:  #5A4C37;
+    }
+    
+    .fotomempelai{
+        width: auto;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .and {
+        font-size: 45px;
+        color: #E5D1B3;
+    }
+    .namamempelai {
+        font-size: 22px;
+    }
+    .garis {
+        width: 120px;
+        height: 1px;
+        background-color: black;
+        margin: 10px 0px;
+    }
+    .son, .daug {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .ortu {
+        font-size: 20px;
+    }
+    .imgmempelai {
+        color: #5A4C37;
+        text-align: center;
+    }
+    
+    .imgmempelai img {
+        width: 100px;
+        height: 170px;
+        border-radius: 20px;
+    }
+    .frame3 {
+        width: 100%;
+        height: 1200px;
+        position: relative;
+        background-color: #C9B699;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .isiframe3 {
+        width: 100%;
+        height: 1000px;
+        background-color: #6F6557;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 55px;
+        color: #F8F1E7;
+    }
+    
+    .isiframe3 .dt {
+        font-size: 30px;
+        font-weight: bolder;
+        margin-bottom: 50px;
+    }
+    .isiframe3 .datetime{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .date, .month, .year {
+        width: 80px;
+    }
+    .datetime .date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .datetime .month {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .datetime .year {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .datetime .judul {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .datetime .angka {
+        font-size: 40px;
+    }
+    .kutip {
+        width: 400px;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .kutipb {
+        font-weight: 600;
+        padding-bottom: 60px;
+    }
+    
+    .fotoframe3 {
+        width: 340px;
+        height: 300px;
+        background-image: url(assets/template1/fotodatetime.png);
+        border-radius: 60px 60px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+    .fotoframe3 p {
+       color: #F8F1E7;
+       
+    }
+    .fotoframe3 .a {
+        font-size: 14px;
+        font-weight: bold;
+       
+    }
+    .fotoframe3 .b {
+        font-family: 'Gwendolyn', cursive ;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .fotoframe3 .c {
+        font-size: 14px;
+    }
+    .fotoframe3 .d {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 60px;
+    }
+    .dibawahfoto {
+        width: 340px;
+        height: 300px;
+        background-color: white;
+        border-radius: 0px 0px 60px 60px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .garis2 {
+        width: 100px;
+        height: 1px;
+        background-color: black;
+        margin: 5px 0px;
+    }
+    .piring, .cincin {
+        width: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    table tr td p {
+        font-size: 10px;
+    
+    }
+    table tr td img {
+        width: 8px; height: 9px
+    }
+    table tr .dua {
+        width: 150px;
+    }
+    table tr .satu {
+        width: 20px;
+        color: #C9B699;
+    }
+    
+    .piring .judul, .cincin .judul {
+        font-size: 15px;
+        font-weight: bold;
+        color: #5A4C37;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .piring .img, .cincin .img {
+        width: 40px;
+        height: 40px;
+    }
+    .piring .img img{
+        width: 38px; height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cincin .img img {
+        width: 30px; height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    button {
+        width: 75px;
+        height: 25px;
+        border-radius: 5px;
+        border: none;
+        background-color: #C9B699;
+        color: #F8F1E7;
+        font-size: 10px;
+        padding-left: 20px;
+        position: relative;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    button::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15px;
+        height: 15px;
+        background: url(assets/template1/pinmap.png) no-repeat center center;
+        background-size: contain;
+        filter: brightness(0) invert(1);
+    }
+    .frame4 {
+        width: 100% ;
+        height: 300px ;
+        background-image: url(assets/template1/FrameAwal.png) ;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .frame4 .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        width: 200px;
+        height: 600px;
+        color: #F8F1E7;
+        text-align: center;
+    }
+    .frame4 .text .a {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .frame4 .text .name {
+        font-family:'Gwendolyn', cursive ;
+        font-size: 40px;
+    }
+    .frame4 .text .ortu {
+        font-size: 16px;
+        
+    }
+    .qr {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 180px;
+        height: 100%;
+    
+    }
+    .vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+    }
+    .vertical img {
+        height: 30px;
+    }
+    .logo {
+        width: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo img {
+        width: 20px;
+        height: 20px;
+    }
+    
+}
