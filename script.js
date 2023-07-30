@@ -10,7 +10,8 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.classList.add("active"); // Add active class to the clicked tab link
-    evt.currentTarget.style.borderBottom = "2px solid black"; // Set bottom border for the active tab
+    evt.currentTarget.style.borderBottom = "2px solid black";
+  
 
     // Add box shadow to the container of the text
     var containerText = document.querySelector(".tab-content.active .Container");
