@@ -748,7 +748,7 @@ button::before {
 
     .piring,
     .cincin {
-        width: 120px;
+        width: 130px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -775,7 +775,7 @@ button::before {
     }
     .piring .judul,
     .cincin .judul {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: bold;
         color: #5A4C37;
 
@@ -857,7 +857,7 @@ button::before {
 
     .frame4 .text .name {
         font-family: 'Just Another Hand', cursive;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .frame4 .text .ortu {
@@ -882,7 +882,7 @@ button::before {
         align-items: center;
     }
     .vertical img {
-        height: 30px;
+        height: 20px;
     }
     .logo {
         width: 70px;
